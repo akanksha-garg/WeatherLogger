@@ -9,12 +9,16 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var weatherInfoTableView: UITableView!
+    // MARK: - Variables
+    let weatherVM = WeatherViewModel()
+    private let control: UIRefreshControl = UIRefreshControl()
+    let estimatedRowHeight = 450.00
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-
-
 }
 
